@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript :: Moby Dick</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Monsieur+La+Doulaise&family=Poiret+One&family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+    #page {
+        width: 928px;
+        height: 1224px;
+        margin: 24px auto;
+        background: #AA0002;
+        border-radius: 24px;
+        border: 1px solid black;
+        color: mediumpurple;
+    } h1 {
+        font: 60pt/1.4em "New Rocker";
+		font-family: "Monsieur La Doulaise", cursive;
+        text-align: center; 
+		margin-bottom: 10px;
+		margin-top: 80px;
+	} h2 {
+		text-align: center;
+		font-size: 15px;
+		
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } img {
+        width: 125px;
+    } img:hover {
+        filter: opacity(0.67);
+    } figure {
+        width: 125px;
+        margin: 0 auto;
+        cursor: pointer;
+    } figcaption {
+        font: 12pt/1.4em Georgia;
+        text-align: center;
+    } #buttons {
+        width: 500px;
+        margin: 48px auto 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    } button {
+        width: 125px;
+        height: 50px;
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 6px;
+    } @media print {
+        body {
+            width: 7in;
+            height: 9.0in;
+        } figure {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+    <h1>M. Butterfly</h1>
+		<h2><i>Summeraized by chatgbt</i></h2>
+    <p><i>M. Butterfly</i>  was written by was written by David Henry Hwang and first premiered in 1988. The play is inspired by a true story involving a French diplomat named Bernard Boursicot and a Chinese opera singer named Shi Pei Pu.</p>
+    <p>The plot follows René Gallimard, a French diplomat stationed in China, who falls in love with Song Liling, a Chinese opera singer. Gallimard believes Song is a woman and develops a romantic relationship with her. However, Song is actually a man secretly working as a spy for the Chinese government. Song uses Gallimard's love and trust to obtain confidential government information. Eventually, Gallimard discovers the truth, leading to his emotional breakdown and tragic ending.</p>
+	<p>The significance of <i>M. Butterfly</i> is that it challenges stereotypes about gender, race, sexuality, and cultural identity. Hwang specifically critiques Orientalism, which is the Western tendency to portray Eastern cultures as exotic, mysterious, submissive, and inferior. Through Gallimard's attraction to Song, Hwang demonstrates how Western fantasies about Asian women influence the way people view and treat Asian individuals. The play exposes how these stereotypes create unrealistic expectations and distort reality. Ultimately, <i>M. Butterfly</i> challenges audiences to question cultural assumptions, gender roles, and the power dynamics between East and West.</p>
+<div id="buttons">
+    <figure>
+    <img src="dreamdigitalartist-brush-footed-butterfly-7173505.png" height="110" />
+    <figcaption>Print Window</figcaption>
+    </figure>
+    
+    <figure>
+    <img src="dreamdigitalartist-brush-footed-butterfly-7173505.png" />
+    <figcaption>Increase Contrast</figcaption>
+    </figure>
+    
+    <figure>
+    <img src="dreamdigitalartist-brush-footed-butterfly-7173505.png" style="filter: grayscale(0.75)" />
+    <figcaption>Reset Contrast</figcaption>
+    </figure>
+</div>
+
+</div>
+<script>
+    function increaseContrast() {
+        document.getElementById('page').style.background='white';
+         document.getElementById('page').style.color='black';
+    } function resetContrast() {
+        document.getElementById('page').style.background='aliceblue';
+        document.getElementById('page').style.color='dimgray';
+    }
+</script>
+
+</body>
+</html>
